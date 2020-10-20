@@ -19,7 +19,7 @@ import booklist.model.dao.AdminBookListDAO;
 /**
  * Servlet implementation class AdminBookList
  */
-@WebServlet("/AdminBookList")
+@WebServlet("/AdminBookListServlet")
 public class AdminBookListServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private AdminBookListDAO adminbooklistDAO;
