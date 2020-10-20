@@ -44,6 +44,7 @@
                 </tr>
             </c:forEach>
         </table>
+                    <a align = "center" href = "${pageContext.request.contextPath}/BookListServlet">Logout</a>
     </div> 
 
 
