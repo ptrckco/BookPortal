@@ -11,7 +11,7 @@
 
 <center>
         <h4>
-         <a href="adminbooklist.jsp">Admin List All Books</a>
+         <a href="${pageContext.request.contextPath}/AdminBookListServlet">Admin List All Books</a>
         </h4>
  </center>
     <div align="center">
