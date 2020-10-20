@@ -41,7 +41,7 @@ public class AdminLoginServlet extends HttpServlet {
             if (AdminLoginDAO.validate(loginBean)) {
                 HttpSession session = request.getSession();
                 session.setAttribute("username",uname);
-                response.sendRedirect("success.jsp");
+                response.sendRedirect("adminbooklist.jsp");
             } else {
                 //HttpSession session = request.getSession();
             	response.sendRedirect("error.jsp");
