@@ -17,23 +17,14 @@
    <form action="${pageContext.request.contextPath}/BookListServlet?action=insert" method="post">
         </c:if>     
         
-        <table width = '400' height = '80' align = 'left'>
-        <h2>Book Information</h2>       
+        <table align = 'center' width = '400' height = '80'>
+        <h1>Book Information</h1>       
         	
      		
-            <tr>
 
-                <td>
-                 ${book.getbooktitle()}
-                </td>
-            </tr>
-            
-            <tr>
-
-                <td>
+           <h3><p><b>${book.getbooktitle()}<br>
                 ${book.getdescription()}
-                </td>
-            </tr>                       
+                </p></h3>                     
             
             <tr>
                 <th>Author: </th>
@@ -71,19 +62,15 @@
                 </td>
             </tr>
                
-             <tr align ="center">   
-             	<td>
-		            <h4>
-		         		<a href="${pageContext.request.contextPath}/BookListServlet?action=list">Back</a>
-		       		</h4>
-		       	</td>
-       		</tr>            
+                       
         </table>
-        		
-				
+        	
+		
         </form>
     </div>
-    
+    <h4 align ='center'>
+		    <a href="${pageContext.request.contextPath}/BookListServlet?action=list">Return to book list</a>
+	</h4>
              
         
 
