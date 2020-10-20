@@ -39,7 +39,7 @@ where username = ? and pass = ?
 <c:forEach items="${result.rows}" var="r">
 <c:choose>
 <c:when test="${r.kount > 0}">
-<c:redirect url = 'adminbooklist.jsp'/>
+<c:redirect url = 'AdminBookListServlet'/>
 </c:when>
 <c:otherwise>
 <p  align = "center">
